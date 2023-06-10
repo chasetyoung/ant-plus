@@ -41,7 +41,7 @@ export class CadenceSensor extends AntPlusSensor {
 	}
 
 	public attach(channel, deviceID): void {
-		super.attach(channel, 'receive', deviceID, CadenceSensor.deviceType, 0, 255, 8086);
+		super.attach(channel, 'receive', deviceID, CadenceSensor.deviceType, 0, 255, 8102);
 		this.state = new CadenceSensorState(deviceID);
 	}
 
